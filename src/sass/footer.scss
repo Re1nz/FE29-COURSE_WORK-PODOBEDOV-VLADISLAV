@@ -1,0 +1,68 @@
+
+.footer-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: $_18px;
+text-transform: uppercase;
+color: $white;
+}
+
+
+
+
+.footer-subtitle {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    color: $white;
+    text-transform: capitalize;
+}
+
+
+.footer-social {
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;  
+   
+    &-img {
+        padding: 0;
+        transition: 0.8s;
+    }
+    &-img:hover {
+        transform: rotate(1turn);
+        background-color: $coral;
+        cursor: pointer;
+    }
+    &-img:active {
+        transform: scale(1.1);
+        background-color: $orange;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: $color_subfooter;
+   
+    &-title {
+    margin: 15px 0 15px 0;
+    width: 370px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #808080;
+
+        &:after {
+            content: ' by Kamal Chaneman';
+            color: $white;
+        }
+    }
+    
+}
+

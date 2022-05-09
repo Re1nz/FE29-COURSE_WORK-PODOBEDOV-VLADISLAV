@@ -1,0 +1,68 @@
+
+
+
+
+.wrap-work {
+    display: flex;
+    width: 1510px;
+    margin: auto;
+
+    &-holder {
+        width: 370px;
+        height: 340px;
+        position: relative;
+        transition: 0.4s;
+        border: 1px solid $white;
+        &:hover {
+            border: 1-px solid $white;
+            transform: scale(1.1);
+            z-index: 2;
+        }
+        
+        &:hover .wrap-work-holder-item-title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 101%;
+            height: 101%;
+            background-color: rgba(255, 67, 67, 0.8) ;
+            display: block;
+            cursor: pointer;
+        
+        }
+        &:active .wrap-work-holder-item-title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 101%;
+            height: 101%;
+            background-color: rgba(185, 12, 12, 0.8) ;
+            display: block;
+            cursor: pointer;
+        }
+       
+        &-item-title {  
+            display: none;
+            text-align: center;
+        }
+      
+        &-item-title h2 {
+        margin-top: 70px;
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: $_24px;
+        text-transform: uppercase;
+        color: $white;
+
+        }
+        &-item-title h3 {
+        margin-top: 70px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        color: $white;
+        }
+    }
+}       
+
+

@@ -1,0 +1,59 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'card.scss';
+@import 'work.scss';
+@import 'workers.scss';
+@import 'gallery.scss';
+@import 'footer.scss';
+@import 'mixins.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    max-width: 1170;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+.wrap-footer {
+    background-color: $color_footer;
+    padding: 15px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    &-left {
+        @include card;
+    }
+    &-middle {
+        width: 200px;
+        margin: 0 70px 0 70px;
+        padding: 15px 0 0 15px;
+    }
+    &-right {
+        @include card;
+    }
+}
+
+

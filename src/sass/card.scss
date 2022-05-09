@@ -1,0 +1,39 @@
+.wrap-card {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+    .card-item {
+        padding: 10px;
+        width: 370px;
+        flex-wrap: wrap;
+        &-img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        
+        }
+       
+        &-title {
+        margin-bottom: 40px;
+        font-family: 'Raleway';
+        color: $black_font;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        }
+        &-subtitle {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        color: $grey_font;
+        }
+    }
+}
+

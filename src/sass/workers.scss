@@ -1,0 +1,68 @@
+.card-workers {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        width: 270px;
+        &-img {
+            transition: 0.4s;
+        }
+        &-img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        &-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: $_24px;
+            color: $black_font;
+            text-transform: capitalize;
+            text-align: left;
+            margin: 25px 0 15px 0;
+            }
+        &-prof {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    text-transform: uppercase;
+    color: $orange;
+    text-align: left;
+    margin-bottom: 15px;
+        } 
+        &-subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    color: $grey_font;
+    text-align: left;
+        }  
+    }
+ 
+
+    
+}
+
+
+
+.social-workers {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: left;
+    align-items: flex-end;
+    &-img {
+        margin: 0;
+        transition: 0.8s;
+    }
+    &-img:hover {
+        transform: rotate(1turn);
+        background-color: $orange;
+        cursor: pointer;
+    }
+    &-img:active {
+        transform: scale(1.1);
+        background-color: $orange;
+    }
+}
+
+
